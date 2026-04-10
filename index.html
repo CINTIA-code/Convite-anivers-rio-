@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Convite de Aniversário</title>
+<title>Convite 15 anos</title>
 
 <style>
 
@@ -15,21 +15,33 @@ font-family: 'Segoe UI', sans-serif;
 }
 
 body{
-background: linear-gradient(135deg,#f5efe6,#e8dccb);
+background: linear-gradient(135deg,#f3ede4,#e7dbc7);
 display:flex;
 justify-content:center;
 align-items:center;
 min-height:100vh;
-padding:20px;
+padding:15px;
 }
 
 .convite{
 background:white;
-max-width:500px;
+max-width:420px;
 width:100%;
-border-radius:20px;
+border-radius:25px;
 overflow:hidden;
-box-shadow:0 10px 30px rgba(0,0,0,0.15);
+box-shadow:0 20px 40px rgba(0,0,0,0.15);
+animation: fade 1s ease;
+}
+
+@keyframes fade{
+from{
+opacity:0;
+transform:translateY(20px);
+}
+to{
+opacity:1;
+transform:translateY(0);
+}
 }
 
 .foto{
@@ -45,57 +57,61 @@ padding:25px;
 text-align:center;
 }
 
-.titulo{
-font-size:26px;
-font-weight:700;
-color:#b08b57;
+.badge{
+background:#b08b57;
+color:white;
+padding:6px 15px;
+border-radius:20px;
+display:inline-block;
+font-size:14px;
 margin-bottom:10px;
 }
 
-.subtitulo{
-font-size:18px;
-color:#444;
+.titulo{
+font-size:26px;
+font-weight:700;
+color:#333;
+margin-bottom:10px;
+}
+
+.texto{
+color:#666;
 margin-bottom:20px;
 }
 
-.info{
-background:#f8f4ee;
+.card{
+background:#f8f5f0;
 padding:15px;
-border-radius:12px;
-margin-bottom:15px;
+border-radius:15px;
+margin-bottom:12px;
+text-align:left;
 }
 
-.info p{
-margin:5px 0;
-font-size:15px;
-color:#333;
-}
-
-.destaque{
-color:#b08b57;
+.card span{
 font-weight:600;
+color:#b08b57;
 }
 
 .botao{
-display:inline-block;
-margin-top:15px;
-padding:14px 20px;
-background:#b08b57;
+display:block;
+background: linear-gradient(135deg,#b08b57,#d4af7f);
 color:white;
+padding:15px;
+border-radius:15px;
 text-decoration:none;
-border-radius:10px;
 font-weight:600;
+margin-top:15px;
 transition:0.3s;
 }
 
 .botao:hover{
-background:#9b7849;
+transform:scale(1.03);
 }
 
 .footer{
-font-size:14px;
 margin-top:15px;
-color:#666;
+color:#777;
+font-size:14px;
 }
 
 </style>
@@ -110,39 +126,44 @@ color:#666;
 
 <div class="conteudo">
 
-<div class="titulo">🎉 Você está convidado(a)! 🎉</div>
+<div class="badge">🎉 15 ANOS</div>
 
-<div class="subtitulo">
-Uma nova fase começa… e eu quero você comigo 💛
+<div class="titulo">
+Você está convidado(a)
 </div>
 
-<div class="info">
-<p class="destaque">💫 Aniversário de 15 anos 💫</p>
-<p>📅 16/05/2026</p>
-<p>⏰ 10h da manhã</p>
+<div class="texto">
+Uma nova fase começa e quero você comigo 💛
 </div>
 
-<div class="info">
-<p class="destaque">📍 Local</p>
-<p>Rua Araguaia, 75 – Vila Real</p>
-<p>Justinópolis – Ribeirão das Neves</p>
-<p>MG • CEP: 33940-200</p>
+<div class="card">
+<span>📅 Data:</span><br>
+16/05/2026 — 10h da manhã
 </div>
 
-<div class="info">
-<p>🌿 Dia leve e cheio de boas energias</p>
-<p>🥩 Traga sua bebida + 500g de carne</p>
-<p>🏖️ Piscina liberada</p>
+<div class="card">
+<span>📍 Local:</span><br>
+Rua Araguaia, 75 – Vila Real<br>
+Justinópolis – Ribeirão das Neves
 </div>
 
-<div class="info">
-<p class="destaque">🎁 Sugestões</p>
-<p>👟 39/40</p>
-<p>👗 GG</p>
-<p>Perfume • Acessórios • Cuidados com a pele</p>
+<div class="card">
+🌿 Dia leve e cheio de boas energias  
 </div>
 
-<a class="botao" 
+<div class="card">
+🥩 Traga bebida + 500g de carne  
+🏖️ Piscina liberada  
+</div>
+
+<div class="card">
+🎁 Sugestões: <br>
+👟 39/40<br>
+👗 GG<br>
+Perfume • Acessórios • Cuidados com a pele
+</div>
+
+<a class="botao"
 href="https://wa.me/5531983499377?text=Oi!%20Confirmo%20minha%20presen%C3%A7a%20no%20seu%20anivers%C3%A1rio%20💛">
 Confirmar Presença
 </a>
